@@ -85,6 +85,7 @@ static void CGRectGrid(CGRect rect, CGRect *grid, size_t width, size_t height)
 #define UIViewReplaceView(view, newView) do {\
 UIView *__view = (view); UIView *__newView = (newView);\
 [__newView setFrame:[__view frame]];\
+[__newView setAutoresizingMask:[__view autoresizingMask]];\
 [[__view superview] insertSubview:__newView belowSubview:__view];\
 [__view removeFromSuperview];\
 view = __newView;\
