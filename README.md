@@ -57,6 +57,7 @@ Position rect inside the left center of ofRect offset by padding.
 Position rect inside the top left corner of ofRect offset both horizontally and vertically by padding.
 
 `CGRect CGRectInsideTopRight(CGRect rect, CGRect ofRect, CGFloat padding)`
+
 Position rect inside the top right corner of ofRect offset both horizontally and vertically by padding.
 
 `CGRect CGRectInsideBottomLeft(CGRect rect, CGRect ofRect, CGFloat padding)`
