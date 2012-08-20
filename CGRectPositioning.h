@@ -81,4 +81,13 @@ static void CGRectGrid(CGRect rect, CGRect *grid, size_t width, size_t height)
 	}
 }
 
+// For views that are implemented programatically this macro can be used to replace xib placeholder views
+#define UIViewReplaceView(view, newView) do {\
+UIView *__view = (view); UIView *__newView = (newView);\
+[__newView setFrame:[__view frame]];\
+[[__view superview] insertSubview:__newView belowSubview:__view];\
+[__view removeFromSuperview];\
+view = __newView;\
+}while(0)
+
 #endif
