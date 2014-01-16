@@ -61,7 +61,7 @@
 
 // Divide a rect into a grid of smaller rects according to width, height
 // grid must be large enough to hold width*height CGRects
-static void CGRectGrid(CGRect rect, CGRect *grid, size_t width, size_t height)
+__attribute__((unused)) static void CGRectGrid(CGRect rect, CGRect *grid, size_t width, size_t height)
 {
 	CGRect *ptr;
 	CGSize cellSize;
