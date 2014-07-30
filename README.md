@@ -1,38 +1,11 @@
 CGRectPositioning
-=================
+-------------------------------
 
 Header file with macros for doing relative CGRect layouts in code.
 
-###License
+## Reference
 
-	Copyright (c) 2012, Symbiotic Software LLC
-	All rights reserved.
-	
-	Redistribution and use in source and binary forms, with or without
-	modification, are permitted provided that the following conditions are met:
-		* Redistributions of source code must retain the above copyright
-		  notice, this list of conditions and the following disclaimer.
-		* Redistributions in binary form must reproduce the above copyright
-		  notice, this list of conditions and the following disclaimer in the
-		  documentation and/or other materials provided with the distribution.
-		* Neither the name of Symbiotic Software LLC nor the
-		  names of its contributors may be used to endorse or promote products
-		  derived from this software without specific prior written permission.
-	
-	THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
-	ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
-	WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-	DISCLAIMED. IN NO EVENT SHALL SYMBIOTIC SOFTWARE LLC BE LIABLE FOR ANY
-	DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
-	(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
-	LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
-	ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-	(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-	SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
-###Reference
-
-####Position inside an edge of a rect
+#### Position inside an edge of a rect
 
 `CGRect CGRectInsideTop(CGRect rect, CGRect ofRect, CGFloat padding)`
 
@@ -50,7 +23,7 @@ Position rect inside the bottom center of ofRect offset by padding.
 
 Position rect inside the left center of ofRect offset by padding.
 
-####Position inside a corner of a rect
+#### Position inside a corner of a rect
 
 `CGRect CGRectInsideTopLeft(CGRect rect, CGRect ofRect, CGFloat padding)`
 
@@ -68,7 +41,7 @@ Position rect inside the bottom left corner of ofRect offset both horizontally a
 
 Position rect inside the bottom right corner of ofRect offset both horizontally and vertically by padding.
 
-####Position outside an edge of a rect
+#### Position outside an edge of a rect
 
 `CGRect CGRectAbove(CGRect rect, CGRect ofRect, CGFloat padding)`
 
@@ -86,7 +59,7 @@ Position rect left of the left center of ofRect offset by padding.
 
 Position rect right of the right center of ofRect offset by padding.
 
-####Position outside a corner of a rect
+#### Position outside a corner of a rect
 
 `CGRect CGRectOutsideTopLeft(CGRect rect, CGRect ofRect, CGFloat padding)`
 
@@ -104,7 +77,7 @@ Position rect outside the bottom left corner of ofRect offset both horizontally 
 
 Position rect outside the bottom right corner of ofRect offset both horizontally and vertically by padding.
 
-####Position outside the corner of a rect and align an edge
+#### Position outside the corner of a rect and align an edge
 
 `CGRect CGRectAboveLeft(CGRect rect, CGRect ofRect, CGFloat padding)`
 
@@ -138,10 +111,10 @@ Position rect below ofRect with right edges aligned and offset by padding.
 
 Position rect right of ofRect with bottom edges aligned and offset by padding.
 
-####Position a rect with a center point
+#### Position a rect with a center point
 `CGRect CGRectCenterAt(CGRect rect, CGPoint point)`
 
-####Other helpful functions
+#### Other helpful functions
 
 `CGPoint CGRectCenter(CGRect rect)`
 
@@ -162,3 +135,7 @@ Divide a rect into a grid of smaller rects according to width, height. Grid must
 `UIViewReplaceView(UIView *view, UIView newView)`
 
 Replace view with newView in the view heirarchy with the same size and autoresizingMask. The clause `view` will also be assigned newView.
+
+## License
+
+The BSD License

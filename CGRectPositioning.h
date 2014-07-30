@@ -1,8 +1,8 @@
 //
 //  CGRectPositioning.h
 //
-//  Copyright (c) 2012 Symbiotic Software LLC. All rights reserved.
-//  Note: all CGRects are assumed to be in a coordinate system with an upper-left origin.
+//  Copyright (c) 2012 Symbiotic Software. All rights reserved.
+//  Note: All CGRects are assumed to be in a coordinate system with an upper-left origin.
 //
 
 #ifndef CGRECT_POSITIONING_H
