@@ -1,9 +1,14 @@
-CGRectPositioning
+About
 -------------------------------
 
-Header file with macros for doing relative CGRect layouts in code.
+CGRectPositioning is a header file with macros for doing relative CGRect layouts in code.
 
-## Reference
+CGRectPositioning macros can position a CGRect above, below, inside, outside, centered, adjacent to, and all other combinations relative to another CGRect using a set padding.
+
+Also provided are macros for creating a CGRect from a size, getting the center point of a CGRect, and working with a grid of CGRects.
+
+Reference
+-------------------------------
 
 #### Position inside an edge of a rect
 
@@ -136,6 +141,7 @@ Divide a rect into a grid of smaller rects according to width, height. Grid must
 
 Replace view with newView in the view heirarchy with the same size and autoresizingMask. The clause `view` will also be assigned newView.
 
-## License
+License
+-------------------------------
 
 The BSD License
